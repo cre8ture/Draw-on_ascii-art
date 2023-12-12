@@ -1,0 +1,53 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#asciiContainer {
+  line-height: 1;
+  letter-spacing: 0;
+  white-space: nowrap;
+  font-family: "monospace";
+  position: 'relative';
+}
+
+span {
+  display: inline-block;
+  width: 1ch;
+}
+
+#explain{
+
+  padding: 10px;
+  max-width: 200px;
+  position: absolute;
+  display:grid;
+  background-color: azure;
+  grid-template-columns: 1fr;
+  top: 5;
+  left: 5;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border: solid 1px #000;
+  border-radius: 15%;
+}
+
+#controlPad {
+  display: flex;
+  justify-content: space-around;
+}
+
+.colorCircle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.colorCircle.selected {
+  border: 2px solid black;
+}
